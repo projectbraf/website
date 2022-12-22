@@ -1,3 +1,11 @@
+# BRAF Dev
+This is a Landing Page requested by friends that i used to study Next.js building a Server Side rendered Landing Page, and practice CSS in JS using Stiches and Framer Motion libraries.
+## Requirements
+[ ] Server Side Generation  
+[ ] Static Page  
+[ ] Good use of CSS in JS  
+[ ] Good use of Framer motion Animations  
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
