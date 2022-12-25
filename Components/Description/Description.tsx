@@ -1,6 +1,8 @@
+import ModType from "../../Utils/ModType";
 import { DescriptionStyle } from "./Description.style";
 
-const Description = () => {
+const Description = (props: {mod: ModType}) => {
+    const { mod } = props;
     return <DescriptionStyle
             initial={{
                 marginTop: '60px',
@@ -15,10 +17,8 @@ const Description = () => {
                 duration: 1
             }}
         >
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id gravida diam, eu auctor neque. Cras non odio porttitor, gravida dui sed, accumsan ipsum.</p>
-        <p>Quisque euismod mattis venenatis. In egestas laoreet sapien vitae pellentesque. Vestibulum malesuada, libero non sagittis gravida, nibh neque suscipit purus, vel auctor velit mi eget velit.</p>
-        <p>Curabitur suscipit diam velit, sed bibendum nunc tempor vel. In fringilla venenatis libero sit amet tempor. Morbi dapibus vehicula dolor eget posuere. Donec consectetur maximus tortor, vitae aliquet neque volutpat non.</p>
-        <p>Morbi commodo vestibulum orci, quis auctor ex congue in. Ut ac tortor elementum, tristique tellus quis, rutrum est.</p>
+        <h4>{mod.title}</h4>
+        <p>Brazilian Armed Forces Mod(BRAF Mod) é um mod que inclui as Forças Armadas Brasileiras à plataforma Arma 3. Tendo início em 2020 em uma coalizão de gamers brasileiros, o mod une diferentes áreas do conhecimento para planejar, agrupar e desenvolver um novo mod, aberto a desenvolvedores que queiram entregar contribuições ao mod.</p>
     </DescriptionStyle>
 }
 

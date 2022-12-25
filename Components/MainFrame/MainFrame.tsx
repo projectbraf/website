@@ -3,7 +3,7 @@ import { MainFrameStyle } from "./MainFrame.style";
 const MainFrame = () => {
     return <MainFrameStyle
             initial={{
-                marginTop: '160px',
+                marginTop: '130px',
                 opacity: 0
             }}
             animate={{

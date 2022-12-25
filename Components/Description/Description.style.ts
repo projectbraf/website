@@ -5,6 +5,7 @@ export const DescriptionStyle = styled(motion.div,{
     zIndex: 0,
     height: 'fit-content',
     width: '84%',
+    color:'#111',
     backgroundColor: 'White',
     marginLeft: 'auto',
     marginRight: 'auto',

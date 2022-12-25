@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Valmo Trindade",
+  "type": "module",
   "scripts": {
     "test": "jest --watchAll",
     "dev": "next dev",

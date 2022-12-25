@@ -1,36 +1,44 @@
+import axios from "axios";
 import { GetStaticProps } from "next";
 import Description from "../Components/Description/Description";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import MainFrame from "../Components/MainFrame/MainFrame";
 import Review from "../Components/Review/Review";
+import ModType from "../Utils/ModType";
 
-export default function HomePage({ repositories, date }: any) {
+export default function HomePage({mod}: {mod: ModType}) {
   return (
     <>
       <Header/>
       <MainFrame/>
-      <Description/>
-      {/*
-      <Review/>
+      <Description mod={mod}/>
+      <Review mod={mod}/>
       <Footer/>
-      */}
     </>
     );
 };
-/*
+
 export const getStaticProps: GetStaticProps = async () => {
-  const repos = await fetch('https://api.github.com/users/valmojr/repos');
-  const data = await repos.json();
+  const params = new URLSearchParams();
 
-  const repositoryNames = data.map((item: {name: string}) => item.name);
+  params.append("key","C91BCD1F954367E37C67D4F2D235403F");
+  params.append("itemcount","1");
+  params.append("publishedfileids[0]","2223739438");
 
+  const res = await axios.post('https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/', params);
+  const data = res.data.response.publishedfiledetails[0];
+  const mod: ModType = {
+    title: data.title,
+    image: data.preview_url,
+    description: data.description,
+    favorites: data.favorited,
+    subscription: data.subscriptions,
+  }
   return {
     props: {
-      repositories: repositoryNames,
-      date: new Date().toISOString()
+      mod: mod
     },
     revalidate: 60 * 60
   };
 }
-*/
