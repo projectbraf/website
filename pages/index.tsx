@@ -1,3 +1,4 @@
+import { CreateStitches, createStitches } from "@stitches/react";
 import axios from "axios";
 import { GetStaticProps } from "next";
 import Description from "../Components/Description/Description";
@@ -19,6 +20,15 @@ export default function HomePage({mod}: {mod: ModType}) {
     );
 };
 
+export const { styled, css } = createStitches({
+  media: {
+    bp1: `@media (min-width: 640px)`,
+    bp2: `@media (min-width: 768px)`,
+    bp3: `@media (min-width: 1024px)`,
+    bp4: `@media (min-width: 1280px)`,
+  },
+});
+
 export const getStaticProps: GetStaticProps = async () => {
   const params = new URLSearchParams();
 
@@ -33,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
     image: data.preview_url,
     description: data.description,
     favorites: data.favorited,
-    subscription: data.subscriptions,
+    subscription: data.subscriptions
   }
   return {
     props: {

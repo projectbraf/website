@@ -1,7 +1,7 @@
-import { styled } from '@stitches/react';
+import { createStitches, styled as Styled } from '@stitches/react';
 import { motion } from 'framer-motion';
 
-export const FooterStyle = styled(motion.div, {
+export const FooterStyle = Styled(motion.div, {
     display: 'flex',
     flexFlow: 'column nowrap',
     width: '100%',
@@ -15,5 +15,5 @@ export const FooterStyle = styled(motion.div, {
     '& h3,h4': {
         margin: '0 auto',
         color: '#ccc'
-    }
+    },
 })

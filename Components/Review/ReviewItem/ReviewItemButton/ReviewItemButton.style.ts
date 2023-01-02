@@ -10,9 +10,11 @@ export const ReviewItemButtonStyle = styled(motion.button, {
     cursor: 'pointer',
     height: '45px',
     width: '250px',
+    margin: '0 auto',
     boxShadow: '0px 4px 5px 2px rgba(0, 0, 0, 0.2)',
     '&:hover':{
         transition: '0.5s',
+        scale: 1.1,
         boxShadow: '0px 6px 7px 4px rgba(0,0,0,0.3)'
     },
 

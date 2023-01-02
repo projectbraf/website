@@ -9,11 +9,12 @@ export const ReviewItemStyle = styled(motion.div, {
     marginLeft: 'auto',
     marginRight: 'auto',
     boxShadow: '0px 10px 20px Black',
-    marginTop: '20px',
-    padding:'5%',
+    margin: '20px auto',
+    padding: '5%',
+    paddingTop: '2%',
     display: 'flex',
     flexFlow: 'column nowrap',
-    justifyContent: 'end',
-    alignContent: 'flex-end',
+    justifyContent: 'center',
+    alignContent: 'center',
     color:'#111'
 })
