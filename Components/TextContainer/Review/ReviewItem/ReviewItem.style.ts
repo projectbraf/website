@@ -1,11 +1,11 @@
-import { styled } from "@stitches/react";
+import { styled } from '../../../../stitches.config';
 import { motion } from "framer-motion";
 
 export const ReviewItemStyle = styled(motion.div, {
     zIndex: 0,
     height: 'fit-content',
     width: '84%',
-    backgroundColor: 'White',
+    backgroundColor: 'white',
     marginLeft: 'auto',
     marginRight: 'auto',
     boxShadow: '0px 10px 20px Black',
@@ -16,5 +16,14 @@ export const ReviewItemStyle = styled(motion.div, {
     flexFlow: 'column nowrap',
     justifyContent: 'center',
     alignContent: 'center',
-    color:'#111'
+    color: '#111',
+    '@tablet': {
+        height: '250px'
+    },
+    '@desktop': {
+        backgroundColor: 'rgba(0,0,0, 0.7)',
+        margin: '18px auto',
+        width: '210px',
+        color: 'white'
+    }
 })

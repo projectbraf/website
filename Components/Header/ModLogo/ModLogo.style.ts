@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react';
+import { styled } from '../../../stitches.config';
 import { motion } from 'framer-motion';
 
 export const ModLogoStyle = styled(motion.div,{

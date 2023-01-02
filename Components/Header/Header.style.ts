@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react';
+import { styled } from '../../stitches.config';
 import { motion } from 'framer-motion';
 
 export const HeaderStyle = styled(motion.div,{
@@ -11,5 +11,10 @@ export const HeaderStyle = styled(motion.div,{
     justifyContent: 'center',
     backgroundColor: '#222',
     boxShadow: '0px 3px 10px Black',
-    paddingTop: '8px'
+    paddingTop: '8px',
+    '@desktop': {
+        height: 0,
+        backgroundColor: 'transparent',
+        boxShadow: 'none'
+    }
 })

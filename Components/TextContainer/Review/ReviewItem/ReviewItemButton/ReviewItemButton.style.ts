@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from '../../../../../stitches.config';
 import { motion } from "framer-motion";
 
 export const ReviewItemButtonStyle = styled(motion.button, {
@@ -17,7 +17,9 @@ export const ReviewItemButtonStyle = styled(motion.button, {
         scale: 1.1,
         boxShadow: '0px 6px 7px 4px rgba(0,0,0,0.3)'
     },
-
+    '@desktop':{
+        width: '200px'
+    },
     variants: {
         color:{
             Steam: {

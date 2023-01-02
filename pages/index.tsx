@@ -1,11 +1,11 @@
-import { CreateStitches, createStitches } from "@stitches/react";
+import { createStitches } from "@stitches/react";
 import axios from "axios";
 import { GetStaticProps } from "next";
-import Description from "../Components/Description/Description";
+import Description from "../Components/TextContainer/Description/Description";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import MainFrame from "../Components/MainFrame/MainFrame";
-import Review from "../Components/Review/Review";
+import TextContainer from '../Components/TextContainer/TextContainer'
 import ModType from "../Utils/ModType";
 
 export default function HomePage({mod}: {mod: ModType}) {
@@ -13,21 +13,11 @@ export default function HomePage({mod}: {mod: ModType}) {
     <>
       <Header/>
       <MainFrame/>
-      <Description mod={mod}/>
-      <Review mod={mod}/>
+      <TextContainer mod={mod}/>
       <Footer/>
     </>
     );
 };
-
-export const { styled, css } = createStitches({
-  media: {
-    bp1: `@media (min-width: 640px)`,
-    bp2: `@media (min-width: 768px)`,
-    bp3: `@media (min-width: 1024px)`,
-    bp4: `@media (min-width: 1280px)`,
-  },
-});
 
 export const getStaticProps: GetStaticProps = async () => {
   const params = new URLSearchParams();

@@ -17,9 +17,10 @@ export const {
       },
     },
     media: {
-        bp1: '(min-width: 640px)',
-        bp2: '(min-width: 768px)',
-        bp3: '(min-width: 1024px)',
+        'mobile': '(max-width: 680px)',
+        'tablet': '(min-width: 681px)',
+        'desktop': '(min-width: 1124px)',
+        'fulldesktop': '(min-width: 1200px)',
     },
     utils: {
       marginX: (value: string) => ({ marginLeft: value, marginRight: value }),
