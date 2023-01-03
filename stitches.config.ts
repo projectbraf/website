@@ -27,3 +27,17 @@ export const {
       marginY: (value: string) => ({ marginTop: value, marginBottom: value }),
     },
   });
+
+export const injectGlobalStyles = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0
+  },
+  '@desktop': {
+    body: {
+      overflow: 'hidden'
+    }
+  }
+});
+
+injectGlobalStyles();

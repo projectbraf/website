@@ -9,7 +9,7 @@ export const MainFrameStyle = styled(motion.div, {
     marginLeft: 'auto',
     marginRight: 'auto',
     boxShadow: '0px 10px 20px Black',
-    marginTop: '120px',
+    marginTop: '60px',
     '@mobile': {
         height: 'calc(230px + 10vmin)',
         'img': {
@@ -25,13 +25,11 @@ export const MainFrameStyle = styled(motion.div, {
         }
     },
     '@desktop': {
-        marginTop: 'none',
+        marginTop: '0',
+        position: 'absolute',
         'img': {
-            position: 'absolute',
-            width: 'calc(100% + 3.5vmax)',
-            height: 'calc(100vh)',
-            marginTop: '-120px',
-            marginLeft: '-100px'
+            width: '100vmax',
+            height: '100vh',
         }
     }
 })

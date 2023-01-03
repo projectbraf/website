@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const HeaderStyle = styled(motion.div,{
     zIndex: 1,
-    position: 'absolute',
+    position: 'relative',
     display: 'flex',
     flexFlow: 'row nowrap',
     width: '100%',
@@ -13,6 +13,7 @@ export const HeaderStyle = styled(motion.div,{
     boxShadow: '0px 3px 10px Black',
     paddingTop: '8px',
     '@desktop': {
+        position: 'absolute',
         height: 0,
         backgroundColor: 'transparent',
         boxShadow: 'none'
