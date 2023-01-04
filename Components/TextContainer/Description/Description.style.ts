@@ -5,9 +5,8 @@ export const DescriptionStyle = styled(motion.div,{
     zIndex: 0,
     height: 'fit-content',
     width: '84%',
+    margin: 'auto',
     backgroundColor: 'white',
-    marginLeft: 'auto',
-    marginRight: 'auto',
     boxShadow: '0px 10px 20px Black',
     padding: '10px 5%',
     textAlign: 'justify',
@@ -19,7 +18,11 @@ export const DescriptionStyle = styled(motion.div,{
         textAlign: 'left'
     },
     '@mobile': {
-        marginTop: '20px'
+        marginTop: '20px',
+        width: '90%',
+    },
+    '@tablet': {
+        width: '90%',
     },
     '@desktop': {
         color: 'white',

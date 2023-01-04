@@ -1,7 +1,5 @@
-import DiscordLogo from "./DiscordLogo/DiscordLogo";
 import { HeaderStyle } from "./Header.style";
-import ModLogo from "./ModLogo/ModLogo";
-import SteamLogo from "./SteamLogo/SteamLogo";
+import Logo from "./Logo/Logo";
 
 const Header = () => {
     return <HeaderStyle
@@ -15,9 +13,7 @@ const Header = () => {
                     duration: 0.8
                 }}
             >
-        <DiscordLogo/>
-        <ModLogo/>
-        <SteamLogo/>
+        <Logo/>
     </HeaderStyle>
 }
 

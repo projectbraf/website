@@ -3,7 +3,9 @@ import { styled } from '../../stitches.config';
 
 export const TextContainerStyled = styled(motion.div,{
     '@tablet': {
-        marginTop: '20px'
+        margin: 'auto',
+        marginTop: '20px',
+        width: '90%'
     },
     '@desktop': {
         overflow: 'hidden',
@@ -13,6 +15,6 @@ export const TextContainerStyled = styled(motion.div,{
         height: '545px',
         width: '600px',
         marginLeft: '100px',
-        marginTop: '100px'
+        marginTop: '155px'
     }
 })

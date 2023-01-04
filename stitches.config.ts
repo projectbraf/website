@@ -14,6 +14,9 @@ export const {
       colors: {
         gray400: 'gainsboro',
         gray500: 'lightgray',
+        braf: 'green',
+        steam: './Utils/Logos/steam.svg',
+        discord: './Utils/Logos/discord.svg'
       },
     },
     media: {

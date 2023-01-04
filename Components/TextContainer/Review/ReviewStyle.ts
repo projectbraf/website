@@ -14,8 +14,10 @@ export const ReviewStyle = styled(motion.div, {
     },
     '@tablet': {
         flexFlow: 'row nowrap',
-        gap: '15px',
-        padding: '0 30px'
+        margin: 'auto',
+        justifyContent: 'center',
+        width: '95%',
+        gap: '10%'
     },
     '@desktop': {
         gap: '0px',

@@ -1,7 +1,7 @@
-import { ModLogoStyle } from "./ModLogo.style";
+import { LogoStyle } from "./Logo.style";
 
 const ModLogo = () => {
-    return <ModLogoStyle
+    return <LogoStyle
         initial={{
             height: '0'
         }}

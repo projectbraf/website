@@ -17,5 +17,5 @@ export const HeaderStyle = styled(motion.div,{
         height: 0,
         backgroundColor: 'transparent',
         boxShadow: 'none'
-    }
+    },
 })
