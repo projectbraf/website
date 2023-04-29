@@ -8,6 +8,7 @@ export const ReviewItemStyle = styled(motion.div, {
     backgroundColor: 'white',
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginTop: '10px',
     boxShadow: '0px 10px 20px Black',
     margin: '20px auto',
     padding: '5%',

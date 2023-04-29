@@ -15,7 +15,7 @@ const Review = (props: {mod: ModType}) => {
             </ReviewItem>
             <ReviewItem>
                 <p>Se você está procurando por uma comunidade brasileira de jogadores de Arma 3 para interagir, discussões sobre o mod, missões informais semanalmente ou um grupo para integrar-se, encontre tudo isso em nosso discord!</p>
-                <a href="https://discord.gg/4VYrgqTx">
+                <a href="https://discord.gg/F3aFmvr5">
                     <ReviewItemButton type={'Discord'}>
                         Discord
                     </ReviewItemButton>
