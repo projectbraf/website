@@ -1,6 +1,6 @@
 import { styled } from '../../../stitches.config';
 import { motion } from 'framer-motion';
-import logo from '../../../Utils/Images/Logo.png';
+import logo from '../../../Utils/Images/logo.png';
 
 export const LogoStyle = styled(motion.div,{
     width: '100px',
