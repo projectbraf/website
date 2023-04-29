@@ -10,7 +10,6 @@ const Footer = () => {
                 }}
             >
             <h3>BRAF Mod - Todos os direitos reservados</h3>
-            <h4>Landing Page por Valmo Trindade</h4>
         </FooterStyle>
 }
 
